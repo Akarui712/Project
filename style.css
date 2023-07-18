@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+.hero{
+	background-image: url(../img/0_1t83pw5wzNVp1ZjA.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	position: relative;
+	z-index: 2;
+	color: #fff;
+}
+
+.hero:before{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	z-index: -1;
+	opacity: .80;
+}
+.logo-header{
+	width: 24%;
+	margin-top: 3em;
+	margin: auto;
+	display: block;
+}
+#header{
+    max-width: 900px;
+    margin: auto;
+    background-color: #333;
+    font-size: 20px;
+}
+.menú{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menú > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+.menú > li :hover{
+    background-color: blue;
+}
+.background{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(60deg, #40E5DD, #407AE5);
+    background-size: 600% 600%;
+    animation: bgAnimatedGradient 8s infinite linear;
+}
+@keyframes bgAnimatedGradient{
+    0%{background-position: 0 85%;}
+    50%{background-position: 100% 20%;}
+    100%{background-position: 0% 85%;}
+}
